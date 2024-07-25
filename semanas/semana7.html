@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="semana1.css">
+    <title>Semana 7: Uso de Hooks</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Semana 7: Uso de Hooks</h1>
+
+        <section class="section">
+            <h2 class="section-title">Definiciones</h2>
+            <p class="section-content">Los Hooks en React son funciones que permiten a los componentes funcionales tener características de los componentes de clase, como el estado y los ciclos de vida, sin necesidad de convertirlos en clases.</p>
+            <p class="section-content">Los Hooks se utilizan dentro de los componentes funcionales para agregar y manipular el estado y realizar acciones específicas en diferentes momentos del ciclo de vida de un componente.</p>
+            <p class="section-content">El propósito y utilidad de estos son:</p>
+            <ul class="list">
+                <li>Manejo del Estado en Componentes Funcionales: Los Hooks, especialmente <code>useState</code>, permiten a los componentes funcionales tener su propio estado local.</li>
+                <li>Ejecución de Efectos Secundarios: Hooks como <code>useEffect</code> permiten realizar acciones secundarias, como llamadas a API o manipulación del DOM, después de que el componente ha sido renderizado.</li>
+                <li>Contexto de React: El Hook <code>useContext</code> permite a los componentes funcionales suscribirse al contexto de React, permitiendo un acceso fácil a datos compartidos en la aplicación.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Procedimientos</h2>
+            <p class="section-content">El uso de Hooks en React implica la incorporación de funciones especiales dentro de componentes funcionales para gestionar el estado, los efectos y otras funcionalidades.</p>
+            <p class="section-content">Para trabajar con estos en React se realiza los siguientes pasos:</p>
+            <ul class="list">
+                <li>Se importa la función <code>useState</code> de React y se declara el estado utilizando <code>useState</code> y se asigna un valor inicial.</li>
+                <li>Para el <code>useEffect</code>, se importa la función <code>useEffect</code> de React y se define la función que contiene los efectos secundarios y se pasa esta función a <code>useEffect</code>.</li>
+                <li>En el <code>useContext</code>, se accede al contexto utilizando <code>useContext</code> y nos proporciona el contexto que se desea utilizar.</li>
+                <li>Para <code>useReducer</code>, se define una función reductora y un estado inicial, para luego llamar a <code>useReducer</code> y obtener el estado actual y la función de despacho.</li>
+                <li>Además de los Hooks mencionados, React proporciona varios otros Hooks como <code>useCallback</code>, <code>useMemo</code>, <code>useRef</code>, etc. Cada uno tiene su propio propósito específico.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Resultados</h2>
+            <p class="section-content">El uso de Hooks en React para el desarrollo de páginas web puede tener varios resultados beneficiosos que mejoran la eficiencia del desarrollo, la organización del código y la experiencia del usuario:</p>
+            <ul class="list">
+                <li>Mejora la eficiencia del desarrollo y la legibilidad del código al permitir el uso de características de estado y ciclo de vida en componentes funcionales.</li>
+                <li>Ofrece una mayor flexibilidad y modularidad en la creación de componentes.</li>
+                <li>La elección de qué Hooks utilizar dependerá de los requisitos específicos de cada componente y la naturaleza de la aplicación.</li>
+            </ul>
+        </section>
+
+        <div class="image-container">
+            <img class="image" src="./img/habilidades/hook.png" alt="Uso de Hooks">
+        </div>
+    </div>
+</body>
+
+</html>

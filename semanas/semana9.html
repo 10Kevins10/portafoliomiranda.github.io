@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="semana1.css">
+    <title>Semana 9: Next.js CSR / SSR</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Semana 9: Next.js CSR / SSR</h1>
+
+        <section class="section">
+            <h2 class="section-title">Definiciones</h2>
+            <p class="section-content">Next.js es un framework de desarrollo web basado en React que simplifica y agiliza la creación de aplicaciones web.</p>
+            <p class="section-content">Proporciona un conjunto de utilidades y convenciones para la creación de rutas, gestión del estado y la posibilidad de renderizar páginas tanto en el lado del servidor como en el lado del cliente.</p>
+            <p class="section-content">Dentro de su uso y utilidad están:</p>
+            <ul class="list">
+                <li><strong>Interactividad Rápida:</strong> Permite una carga inicial rápida, enviando solo el esqueleto de la aplicación al cliente y realizando la renderización en el navegador.</li>
+                <li><strong>Aplicaciones de Una Página (SPA):</strong> Adecuado para aplicaciones con una interactividad intensiva en el cliente, funcionando como SPAs donde las transiciones entre páginas se gestionan sin recargar la página completa.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Procedimientos</h2>
+            <p class="section-content">Next.js utiliza una serie de procedimientos y conceptos para su ejecución. Aquí una visión de los procedimientos clave:</p>
+            <ul class="list">
+                <li><strong>Configuración:</strong> Se debe configurar un proyecto Next.js utilizando la herramienta de línea de comandos <code>create-next-app</code>.</li>
+                <li><strong>Ejecutar el Proyecto:</strong> Luego se ejecuta el comando: <code>npm run dev</code>.</li>
+                <li><strong>Enrutamiento:</strong> Next.js utiliza un sistema de enrutamiento basado en archivos. Los archivos en la carpeta <code>pages</code> determinan las rutas de la aplicación.</li>
+                <li><strong>Datos:</strong> Para la creación de páginas dinámicas y estáticas, se utilizan funciones especiales como <code>getStaticProps</code> y <code>getServerSideProps</code> para controlar la obtención de datos.</li>
+                <li><strong>Estilos:</strong> Se pueden gestionar los estilos de los componentes utilizando módulos CSS, Styled JSX, o integrando con bibliotecas como SCSS o Tailwind CSS.</li>
+                <li><strong>API Routes:</strong> Next.js permite la creación de API Routes para gestionar solicitudes y respuestas en el servidor. Estos archivos se encuentran en la carpeta <code>pages/api</code>.</li>
+                <li><strong>Despliegue:</strong> Para desplegar la aplicación, se pueden utilizar diferentes servicios, como Vercel, que tiene una integración estrecha con Next.js, o otros servicios como AWS y Netlify.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Resultados</h2>
+            <p class="section-content">El uso de Next.js puede proporcionar una experiencia de desarrollo más eficiente, mejorar el rendimiento y facilitar la implementación de estrategias avanzadas, como la representación del lado del servidor y el SEO mejorado.</p>
+            <p class="section-content">La configuración inicial de un proyecto Next.js es rápida y sencilla utilizando <code>create-next-app</code>, con recarga en tiempo real y actualización automática durante el desarrollo local, facilitando un desarrollo rápido y eficiente.</p>
+            <p class="section-content">La creación de API Routes en la carpeta <code>pages/api</code> simplifica la gestión de solicitudes y respuestas en el servidor.</p>
+        </section>
+
+        <div class="image-container">
+            <img class="image" src="./img/habilidades/next.jpg" alt="Next.js">
+        </div>
+    </div>
+</body>
+
+</html>
